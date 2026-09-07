@@ -1,8 +1,4 @@
-Degree Verification System
 
-A decentralized Blockchain-Based Degree Verification System that enables educational institutions to issue digital degree certificates and allows students, employers, and other authorized users to verify the authenticity of certificates using blockchain technology.
-
-The system uses Ethereum Sepolia for storing degree verification records, IPFS for certificate/document storage, Node.js + Express for backend services, and React + Vite for the frontend.
 ## 🏗️ System Architecture
 
 ┌───────────────────────────────┐
@@ -45,7 +41,9 @@ The system uses Ethereum Sepolia for storing degree verification records, IPFS f
 
 # Degree Verification System
 
-A blockchain-based system for issuing and verifying academic degrees.
+A decentralized Blockchain-Based Degree Verification System that enables educational institutions to issue digital degree certificates and allows students, employers, and other authorized users to verify the authenticity of certificates using blockchain technology.
+
+The system uses Ethereum Sepolia for storing degree verification records, IPFS for certificate/document storage, Node.js + Express for backend services, and React + Vite for the frontend.
 
 ## Technologies
 
