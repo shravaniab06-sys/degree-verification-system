@@ -1,30 +1,37 @@
-🏗️ System Architecture
-                    ┌─────────────────────┐
-                    │       User          │
-                    │ Student / Employer  │
-                    │   Institution       │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │   React Frontend    │
-                    │      Vite           │
-                    └──────────┬──────────┘
-                               │
-                 ┌─────────────┴─────────────┐
-                 │                           │
-                 ▼                           ▼
-        ┌─────────────────┐        ┌──────────────────┐
-        │ Node.js +       │        │     MetaMask     │
-        │ Express Backend │        │      Wallet      │
-        └────────┬────────┘        └────────┬─────────┘
-                 │                          │
-                 ▼                          ▼
-        ┌─────────────────┐        ┌──────────────────┐
-        │      IPFS       │        │ Ethereum Sepolia │
-        │ Certificate     │        │ Smart Contract   │
-        │    Storage      │        │                  │
-        └─────────────────┘        └──────────────────┘
+Degree Verification System
+
+A decentralized Blockchain-Based Degree Verification System that enables educational institutions to issue digital degree certificates and allows students, employers, and other authorized users to verify the authenticity of certificates using blockchain technology.
+
+The system uses Ethereum Sepolia for storing degree verification records, IPFS for certificate/document storage, Node.js + Express for backend services, and React + Vite for the frontend.
+## 🏗️ System Architecture
+
+┌───────────────────────────────┐
+│             User              │
+│ Student / Employer /          │
+│ Institution                   │
+└───────────────┬───────────────┘
+                │
+                ▼
+┌───────────────────────────────┐
+│       React Frontend          │
+│            Vite               │
+└───────────────┬───────────────┘
+                │
+       ┌────────┴────────┐
+       │                 │
+       ▼                 ▼
+┌──────────────────┐  ┌──────────────────┐
+│ Node.js +        │  │    MetaMask      │
+│ Express Backend  │  │     Wallet       │
+└────────┬─────────┘  └────────┬─────────┘
+         │                     │
+         ▼                     ▼
+┌──────────────────┐  ┌──────────────────┐
+│      IPFS        │  │ Ethereum Sepolia │
+│   Certificate    │  │ Smart Contract   │
+│     Storage      │  │                  │
+└──────────────────┘  └──────────────────┘
+        
 
 
 | Component          | Technology        | Primary Responsibility                     |
@@ -50,12 +57,34 @@ A blockchain-based system for issuing and verifying academic degrees.
 - MetaMask
 - Ethers.js
 
-## Project Structure
+## 📂 Project Structure
+
 
 degree-verification-system/
+│
 ├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── contracts/
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   └── main.jsx
+│   ├── package.json
+│   └── vite.config.js
+│
 ├── backend/
-└── blockchain/
+│   ├── server.js
+│   ├── package.json
+│   └── package-lock.json
+│
+├── blockchain/
+│   └── contracts/
+│       └── DegreeVerification.sol
+│
+└── README.md
 
 ## Requirements
 
