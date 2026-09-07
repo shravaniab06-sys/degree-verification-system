@@ -1,5 +1,6 @@
 
 ## 🏗️ System Architecture
+```
 
 ┌───────────────────────────────┐
 │             User              │
@@ -27,6 +28,7 @@
 │   Certificate    │  │ Smart Contract   │
 │     Storage      │  │                  │
 └──────────────────┘  └──────────────────┘
+```
         
 
 
@@ -83,6 +85,7 @@ degree-verification-system/
 │       └── DegreeVerification.sol
 │
 └── README.md
+```
 ## Requirements
 
 Install:
