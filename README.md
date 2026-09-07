@@ -57,7 +57,7 @@ The system uses Ethereum Sepolia for storing degree verification records, IPFS f
 
 ## 📂 Project Structure
 
-
+```text
 degree-verification-system/
 │
 ├── frontend/
@@ -83,7 +83,6 @@ degree-verification-system/
 │       └── DegreeVerification.sol
 │
 └── README.md
-
 ## Requirements
 
 Install:
